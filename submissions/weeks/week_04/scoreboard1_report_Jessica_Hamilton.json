@@ -1,0 +1,98 @@
+{
+  "student": "Jessica_Hamilton",
+  "variant": "profile-asymmetric_gaussian__width-amplitude",
+  "kind": "candidate",
+  "question": "the same, with ties reverted to the baseline value",
+  "spec": {
+    "shape": "gamma",
+    "pooling": "shared",
+    "drift": "exponential",
+    "profile": "asymmetric_gaussian",
+    "width": "amplitude",
+    "gate": "none",
+    "emission": "threshold"
+  },
+  "fitted_parameters": 26,
+  "held_out_nll_per_hemicycle_year": -26.34059200882823,
+  "between_hemicycle_spread": 18.59087450841254,
+  "paired_vs_baseline": {
+    "mean": -15.665657350462677,
+    "se": 5.363913775565759,
+    "median": -11.153451637340506,
+    "better": 17,
+    "of": 18
+  },
+  "ks_median": 0.04563350693136321,
+  "ks_not_rejected": 8,
+  "count_error_percent": 10.353760180753602,
+  "plausible_moments": [
+    {
+      "hemicycle": "19N",
+      "observed": 1590,
+      "predicted": 1440.4712924331384,
+      "centroid_obs": 17.16069182389937,
+      "centroid_model": 15.330005500915044,
+      "spread_obs": 8.507418494423913,
+      "spread_model": 7.696798704343906
+    },
+    {
+      "hemicycle": "19S",
+      "observed": 1121,
+      "predicted": 1252.1617309333685,
+      "centroid_obs": 16.36842105263158,
+      "centroid_model": 15.16438541660734,
+      "spread_obs": 7.604571117406902,
+      "spread_model": 7.459761668521398
+    }
+  ],
+  "protocol": {
+    "held_out_unit_contributed": [
+      "its own standard epoch s calculated via fit_alignment",
+      "its maximum amplitude mapped predictively from the sunspot-area record"
+    ]
+  },
+  "fingerprint": {
+    "recipe": {
+      "mesh": [
+        201,
+        241
+      ],
+      "domain": [
+        0.0,
+        60.0
+      ],
+      "window": [
+        -6.0,
+        11.0
+      ],
+      "folds": [
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        23
+      ],
+      "withheld": [
+        16,
+        20,
+        22
+      ],
+      "analysis_set": [
+        12,
+        23,
+        30.0
+      ],
+      "gauge": [
+        1.0,
+        1.0,
+        15.0
+      ],
+      "headline_amplitude": "area record"
+    },
+    "digest": "5e55384fbc54"
+  }
+}
